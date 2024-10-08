@@ -11,6 +11,17 @@ The example data include noise-free diffusion tensor field, noise-free b0 volume
 - *diff_parameters.nii.gz* - Contains the noise-free diffusion parameters (non-diffusion weighted s0, and the unique six elements of the diffusion tensor Dxx, Dyy, Dzz, Dxy, Dxz, and Dyz). The data has shape [128, 128, 96, 7], with parameters in the same order as described above.
 - *mask.nii.gz*  - The whole brain mask.
 
+## **generate testing data**
+
+Codes for generating testing data.
+
+- *different noise levels* - The noise levels include 0.01, 0.02, and 0.03, respectively.
+- *different b values* - The b values include 600, 800, 1000, 1200, and 1500 s/mm<sup>2</sup>, respectively.
+- *numbers of DW volumes* - The numbers of DW volumes include 9, 12, 15, 22, and 32, respectively.
+- *non-stationary Rician noise* - The noise level varies non-linearly over space within the range of 0.01 to 0.03.
+
+
+
 ## mk_nf_data.m
 The code used for generating the noise-free dMRI data.
 
@@ -38,6 +49,12 @@ The code for training the network in SH-DTI using datasets prepared using the ma
 
 ## Trained model
 Due to the 25MB file upload limit, the trained model cannot be uploaded. If you need, please download it at https://drive.google.com/file/d/1103ntSQ3KYY8AHoJO_Bbak2-tcA9dncY/view?usp=drive_link.
+
+## calculate_sh_coe.py
+The code for calculating the spherical harmonics coefficient maps
+
+**Output**
+- *tensor.nii.gz* - The spherical harmonics coefficient maps.
 
 ## test.py
 The code for tesing the trained SH-DTI model.
