@@ -1,6 +1,6 @@
 import numpy as np
 from dipy.io.image import load_nifti,save_nifti
-# noise level  sigma ~ [0.01,0.03]
+# noise level  sigma can be set to 0.01, 0.02, and 0.03.
 sigma = 0.02
 # noise-free data
 dwi_path = ''
