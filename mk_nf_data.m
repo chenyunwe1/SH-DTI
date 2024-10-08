@@ -1,4 +1,4 @@
-addpath('NIfTI_20140122')
+addpath('NIfTI')
 % load bvec 
 bvec = load('');
 if size(bvec,2)==3
