@@ -4,6 +4,12 @@
 
 **The overview of SH-DTI**. (a), The training process of SH-DTI. SH-DTI learns the mapping from low-quality spherical harmonics coefficient maps to high-quality diffusion tensor. (b), Experimental design. Extensive experiments were conducted on both simulated and in-vivo datasets, covering various DTI application scenarios.
 
+## mk_nf_data.m
+The code used for generating the noise-free dMRI data.
+
+**Output**
+- *dwi.nii.gz* - Noise-free dMRI data.
+
 ## make_train_dataset.py
 The code used for preparing the training dataset for the network in SH-DTI.
 
