@@ -76,7 +76,7 @@ def gram_schmidt_sh_inv(s2_coord, L, n_iters=1000, b_type='real', even=True):
     n = np.dot(Y[:, 0:1].T, Y[:, 0:1])[0, 0]
     Y_inv_final /= np.sqrt(n)
 
-    return Y_inv_final,Y
+    return Y_inv_final
 
 # calculate sh basis
 def calculate_sh_basis(bvals_name,bvecs_name,layer = 2):
