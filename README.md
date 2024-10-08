@@ -42,7 +42,7 @@ The code used for preparing the validation  dataset for the network in SH-DTI.
 - *gt_xxxx.npy* - Ground-truth data prepared for network.
 
 ## train.py
-The code for training the network in SH-DTI using datasets prepared using the make_train_dataset.py and make_valid_dataset.py scripts.
+The code for training the network in SH-DTI using datasets prepared using the make_train_dataset.py and make_valid_dataset.py scripts. The version of TensorFlow-GPU is 2.3.0.
 
 **Output**
 - *model_xxx.h5* - The model saved every five training iterations.
@@ -57,7 +57,7 @@ The code for calculating the spherical harmonics coefficient maps
 - *tensor.nii.gz* - The spherical harmonics coefficient maps.
 
 ## test.py
-The code for tesing the trained SH-DTI model.
+The code for tesing the trained SH-DTI model. The version of TensorFlow-GPU is 2.3.0.
 
 **Output**
 - *tensor.nii.gz* - The estimated diffusion tensor (Dxx, Dyy, Dzz, Dxy, Dxz, and Dyz) with a shape of [x, y, z, 6]. 
